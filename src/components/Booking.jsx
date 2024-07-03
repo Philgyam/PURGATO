@@ -1,18 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
 import icon1 from '../assets/images/icon-1.png';
 import icon2 from '../assets/images/icon1.png';
 import icon3 from '../assets/images/icon-3.png';
 import circleimg from '../assets/images/circleimg.png';
 
+function FAQItem({ question, answer }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleFAQ = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="border border-gray-300 rounded p-4 mb-4">
+      <div className="flex justify-between cursor-pointer" onClick={toggleFAQ}>
+        <h3 className="text-lg font-semibold">{question}</h3>
+        <span className="text-lg font-semibold">{isOpen ? '-' : '+'}</span>
+      </div>
+      {isOpen && <div className="mt-2 text-base text-gray-700">{answer}</div>}
+    </div>
+  );
+}
+
+function FAQ() {
+  const faqs = [
+    { question: 'What services do you offer?', answer: 'We offer a variety of cleaning services including residential, commercial, and specialized cleaning services.' },
+    { question: 'What are your rates?', answer: 'Our rates vary depending on the type and frequency of the service. Please contact us for a detailed quote.' },
+    { question: 'Are your cleaners insured?', answer: 'Yes, all our cleaners are fully insured for your peace of mind.' },
+    // Add more FAQs as needed
+  ];
+
+  return (
+    <div className="max-w-2xl mb-[5rem] mx-auto mt-10 px-4 h-80 overflow-y-auto w-full bg-gray-100 rounded-md shadow-lg">
+      <h2 className="text-2xl font-semibold mb-6 text-center">Frequently Asked Questions</h2>
+      {faqs.map((faq, index) => (
+        <FAQItem key={index} question={faq.question} answer={faq.answer} />
+      ))}
+    </div>
+  );
+}
+
 function Booking() {
   return (
-    <div className='h-[45rem] w-full'>
-      <h1 className="text-xl font-bold">You're just a Booking away</h1>
+    <div className='h-auto w-full'>
+      <h1 className="text-xl font-bold text-center mt-8">You're just a Booking away</h1>
 
-      <div className='flex flex-col lg:flex-row justify-around'>
+      <div className='flex flex-col lg:flex-row justify-around mt-8'>
         <div className="h-96 w-full p-4 flex justify-center items-center relative">
           <div className="absolute h-[14rem] bg-[#EEF7FF] border-2 border-gray-400 rounded-full lg:w-[16rem] lg:h-[16rem] w-[14rem]">
-            <img className='h-full w-full object-cover' src={circleimg} alt="" />
+            <img className='h-full w-full object-cover rounded-full' src={circleimg} alt="" />
           </div>
 
           <div className="grid grid-cols-2 lg:gap-[10rem] gap-[8rem]">
@@ -31,7 +67,7 @@ function Booking() {
           </div>
         </div>
 
-        <div className="bg-gray-300 h-[38rem] lg:w-[70%] mx-3 lg:mr-10 p-4">
+        <div className="bg-gray-300 h-auto lg:w-[70%] mx-3 lg:mr-10 p-4 rounded-md shadow-lg">
           <div>
             <h2 className="text-lg font-bold mb-4">Book a Service</h2>
             <form>
@@ -66,6 +102,8 @@ function Booking() {
           </div>
         </div>
       </div>
+
+      <FAQ />
     </div>
   );
 }

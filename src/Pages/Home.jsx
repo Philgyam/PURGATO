@@ -6,6 +6,11 @@ import Booking from '../components/Booking';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Service from '../components/Service';
+import FAQ from '../components/FAQ';
+import Leaflet from '../components/Leaflet';
+import Footer from '../components/Footer';
+
+
 
 
 function Home() {
@@ -20,7 +25,7 @@ function Home() {
 
  
   return (
-    <div className='w-full h-full bg-[#EEF7FF]' style={{
+    <div className='w-full h-full ' style={{
       backgroundImage: `url(${background})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center'
@@ -29,6 +34,9 @@ function Home() {
       <Content />
       <Service/>
       <Booking/>
+      <Leaflet/>
+      <Footer/>
+      
    
     </div>
   );

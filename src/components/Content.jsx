@@ -16,6 +16,8 @@ import grid3 from '../assets/images/grid3.jpg';
 
 
 
+
+
 import { MdStars } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
 
@@ -136,7 +138,7 @@ function Content() {
 
         <div className="w-full  lg:w-[50%] flex justify-center rounded-lg">
           <div className="grid grid-cols-2 w-full h-[20rem] lg:h-[25rem] relative rounded-lg">
-            <div  className="absolute w-[50%] rounded-[1rem] h-[17rem] lg:w-[15rem] left-[0] ">
+            <div data-aos="fade-right" className="absolute w-[50%] rounded-[1rem] h-[17rem] lg:w-[15rem] left-[0] ">
                 <img src={grid1} className='rounded-[1rem] w-[100%]  lg:w-[100%] h-[19rem] lg:h-[22rem] ' alt="" />
             </div>
             <div className="absolute  rounded-[1rem]    h-[10rem] w-[7rem] lg:w-[10rem] lg:left-[48%]  left-[65%] z-50 top-[20%] lg:top-[20%] ">
@@ -144,23 +146,23 @@ function Content() {
                 <h1 className='flex items-center justify-center text-center  gap-2'>customers  <MdStars style={{
                     color: "#F49D1A"
                 }} /></h1></h1>
-               
+                
             </div>
-            <div   style={{
+            <div data-aos="zoom-out"  style={{
                 backgroundImage:`url(${grid3})`,
                 backgroundPosition:'center',
                 backgroundSize:'cover'
             }} className="absolute rounded-[1rem] bg-red-400   h-[10rem] w-[10rem] lg:w-[10rem] top-[100%] lg:top-[95%] ">
 
             </div>
-            <div   className="absolute rounded-[1rem] border-white border-[1rem] w-[65%] h-[20rem] lg:w-[15rem] top-[60%] lg:left-[35%] left-[38%]  ">
+            <div data-aos="fade-left"  className="absolute rounded-[1rem] border-white border-[1rem] w-[65%] h-[20rem] lg:w-[15rem] top-[60%] lg:left-[35%] left-[38%]  ">
                 <img src={grid2} className='rounded-[1rem]' alt="" />
             </div>
           </div>
         </div>
       </div>
 
-    
+      {/* SERVICES */}
      
 
  
