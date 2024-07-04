@@ -21,9 +21,9 @@ import win from '../assets/images/win.jpg'
 import carpet from '../assets/images/carpet.jpg'
 import janitor from '../assets/images/janitor.jpg'
 import move from '../assets/images/move.jpg'
-import event from '../assets/images/event.jpg'
+import event from '../assets/images/eve.webp'
 import construct from '../assets/images/construct.jpg'
-import off from '../assets/images/off.jpg'
+import off from '../assets/images/off.webp'
 
 
 

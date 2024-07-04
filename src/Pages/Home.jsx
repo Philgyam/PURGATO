@@ -9,6 +9,7 @@ import Service from '../components/Service';
 import FAQ from '../components/FAQ';
 import Leaflet from '../components/Leaflet';
 import Footer from '../components/Footer';
+import Grid from '../components/Grid';
 
 
 
@@ -17,7 +18,7 @@ function Home() {
 
   useEffect(()=>{
     AOS.init({
-      once: true, // Whether animations should only happen once
+      once: false, // Whether animations should only happen once
       duration: 500, // Animation duration
       easing: 'ease', // Easing function
     });
@@ -25,13 +26,14 @@ function Home() {
 
  
   return (
-    <div className='w-full h-full ' style={{
+    <div className='w-full h-full bg-[#EEF7FF] ' style={{
       backgroundImage: `url(${background})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center'
     }}>
-      <Header />
+      {/* <Header /> */}
       <Content />
+      <Grid/>
       <Service/>
       <Booking/>
       <Leaflet/>
