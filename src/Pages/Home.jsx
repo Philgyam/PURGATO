@@ -31,7 +31,7 @@ function Home() {
       backgroundSize: 'cover',
       backgroundPosition: 'center'
     }}>
-      {/* <Header /> */}
+      <Header />
       <Content />
       <Grid/>
       <Service/>

@@ -3,6 +3,8 @@ import icon1 from '../assets/images/icon-1.png';
 import icon2 from '../assets/images/icon1.png';
 import icon3 from '../assets/images/icon-3.png';
 import circleimg from '../assets/images/circleimg.png';
+import { FaHome, FaStar } from "react-icons/fa";
+
 
 function FAQItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +45,10 @@ function FAQ() {
 function Booking() {
   return (
     <div className='h-auto w-full'>
-      <h1 className="text-xl font-bold text-center mt-8">You're just a Booking away</h1>
+<h1 className='pl-8 mb-[1rem] flex gap-2 items-center text-black'>
+            MAKE A BOOKING
+            <FaStar className='animate-pulse' style={{ color: '#FFBF00' }} />
+          </h1>      <h1 className="text-4xl font-bold text-center mt-8">You're just a Booking <br /> away</h1>
 
       <div className='flex flex-col lg:flex-row justify-around mt-8'>
         <div className="h-96 w-full p-4 flex justify-center items-center relative">

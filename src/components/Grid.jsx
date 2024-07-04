@@ -5,14 +5,19 @@ import grid3 from '../assets/images/grid3.jpg';
 import { MdStars } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { FaHome, FaStar } from "react-icons/fa";
+
 
 function Grid() {
   return (
     <>
-    <h1 className='mt-[6rem] ml-[2.5rem]'>About Us</h1>
+    <h1 className='pl-8 mb-[1rem] mt-[6rem] flex gap-2 items-center text-black'>
+            ABOUT US
+            <FaStar className='animate-pulse' style={{ color: '#FFBF00' }} />
+          </h1>
     <div className="  h-[60rem] mb-[25rem] lg:mb-[5rem] lg:h-[40rem] pt-[2rem] flex lg:flex-row flex-col gap-[2rem]  px-5 lg:px-[2rem] rounded-lg">
         
-      <div className="text-2xl  flex flex-col lg:pl-[3rem] h-full text-gray-800 rounded-lg w-full lg:w-[100%]">
+      <div className="text-2xl  flex flex-col lg:pl-[3rem] h-full text-gray-800 rounded-lg w-full ">
         <h2 className="text-3xl font-semibold rounded-lg">OUR WAY <br /> THE CLEAN WAY</h2>
         <div>
           <p className='lg:w-[80%] mt-2 text-[1.3rem] '>

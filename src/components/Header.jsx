@@ -11,8 +11,8 @@ import { Navbar2 } from './Navbar2';
 import { motion } from 'framer-motion'; // Import motion from framer-motion
 
 import hero1 from '../assets/images/hero1.jpg';
-import hero2 from '../assets/images/hero2color.jpg';
-import hero3 from '../assets/images/undercover.jpg';
+import hero2 from '../assets/images/hero2.jpg';
+import hero3 from '../assets/images/hero3.jpg';
 
 function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
