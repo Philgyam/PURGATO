@@ -30,6 +30,8 @@ import { RiChat3Line } from "react-icons/ri";
 import { AiOutlineDollarCircle } from "react-icons/ai";
 import { RiFeedbackLine } from "react-icons/ri";
 import { RiKey2Line } from "react-icons/ri";
+import { PiPhoneDuotone } from "react-icons/pi";
+
 
 
 
@@ -208,89 +210,109 @@ function Services() {
         <div className='text- font-bold text-2xl xl:ml-[-1rem] w-full'>TRANSFORMATION</div>
         <div className='text-left font-bold text-2xl  w-full'>SATISFACTION</div>
       </div>
-
-      <div>
-        <h1 className='text-5xl mt-[5rem] pl-[3rem] font-bold mb-[5rem]'>Purgato Essentials</h1>
-        <div className='h-[50rem] w-full px-[5rem] gap-2 justify-around flex flex-col lg:flex-row '>
-    <div className='w-full h-[40rem] gap-2 flex flex-col justify-around '>
-
-        <div className='h-full w-full flex flex-col justify-around bg-pink-200'>
-            <div className='flex w-full gap-5 items-center justify-start'>
-                <div><RiHomeGearLine style={{ height:'3rem', width:'3rem', color: '#FF69B4' }}/></div>
-                <div className='text-2xl font-bold'> Prepare Your Space: </div>
-            </div>
-            <div>
-                Depending on the service booked (e.g., home cleaning), tidy up any personal items or clutter to allow the cleaners to work efficiently.
-            </div>
-        </div>
-        
-        <div className='h-full w-full flex flex-col justify-around bg-blue-200'>
-            <div className='flex w-full gap-5 items-center justify-start'>
-                <div><AiOutlineSafetyCertificate style={{ height:'3rem', width:'3rem', color: '#1E90FF' }}/></div>
-                <div className='text-2xl font-bold'> Secure Valuables: </div>
-            </div>
-            <div>
-                Put away or secure any valuables or sensitive items that you prefer not to be handled during the cleaning process.
-            </div>
-        </div>
-       
-        <div className='h-full w-full flex flex-col justify-around bg-pink-200'>
-            <div className='flex w-full gap-5 items-center justify-start'>
-                <div><RiChat3Line style={{ height:'3rem', width:'3rem', color: '#004225' }}/></div>
-                <div className='text-2xl font-bold'> Communicate Special Instructions </div>
-            </div>
-            <div>
-                If there are specific areas or tasks you want the cleaners to focus on or avoid, communicate these clearly before they start.
-            </div>
-        </div>
-    </div>
-
-    <div className='w-full h-[40rem] flex flex-col gap-2 justify-around '>
-        <div className='h-full w-full flex flex-col justify-around '>
-            <div className='flex w-full gap-5 items-center justify-start'>
-                <div><AiOutlineDollarCircle style={{ height:'3rem', width:'3rem', color: '#D6D46D' }}/></div>
-                <div className='text-2xl font-bold'> Payment Arrangements: </div>
-            </div>
-            <div>
-                Ensure that payment arrangements are clear and settled according to the terms agreed upon with the cleaning service.
-            </div>
-        </div>
-
-        <div className='h-full w-full flex flex-col justify-around '>
-            <div className='flex w-full gap-5 items-center justify-start'>
-                <div><RiFeedbackLine style={{ height:'3rem', width:'3rem', color: '#C40C0C' }}/></div>
-                <div className='text-2xl font-bold'> Feedback and Follow-Up: </div>
-            </div>
-            <div>
-                After the cleaning session, provide feedback to the cleaning service if necessary. If you are satisfied, consider scheduling regular cleanings or provide referrals if you were pleased with the service.
-            </div>
-        </div>
-    </div>
-
-    {/* Last div */}
-    <div className='w-full h-[40rem] flex flex-col'>
-        <div className='h-[33.33%] '>
-            <div className='h-full w-full flex flex-col justify-around '>
+      <div className='bg-[#EEF7FF] w-full h-full'>
+    <h1 className='text-5xl mt-[5rem] pl-[3rem] font-bold mb-[5rem]'>Purgato Essentials</h1>
+    <div className='h-[50rem] w-full lg:px-[5rem] px-[1rem] gap-2 justify-around flex flex-col lg:flex-row'>
+        <div className='w-full h-[40rem] gap-2 flex flex-col justify-around'>
+            <div className='h-full w-full flex flex-col justify-around'>
                 <div className='flex w-full gap-5 items-center justify-start'>
-                    <div><RiKey2Line style={{ height:'3rem', width:'3rem', color: '#E42F45' }}/></div>
-                    <div className='text-2xl font-bold'> Provide Access: </div>
+                    <div><RiHomeGearLine style={{ height:'3rem', width:'3rem', color: '#FF69B4' }}/></div>
+                    <div className='text-2xl font-bold'> Prepare Your Space: </div>
                 </div>
                 <div>
-                    Ensure that cleaners have access to the areas that need cleaning, including keys, access codes, or any specific instructions for entry.
+                    Depending on the service booked (e.g., home cleaning), tidy up any personal items or clutter to allow the cleaners to work efficiently.
+                </div>
+            </div>
+            
+            <div className='h-full w-full flex flex-col justify-around'>
+                <div className='flex w-full gap-5 items-center justify-start'>
+                    <div><AiOutlineSafetyCertificate style={{ height:'3rem', width:'3rem', color: '#1E90FF' }}/></div>
+                    <div className='text-2xl font-bold'> Secure Valuables: </div>
+                </div>
+                <div>
+                    Put away or secure any valuables or sensitive items that you prefer not to be handled during the cleaning process.
+                </div>
+            </div>
+            
+            <div className='h-full w-full flex flex-col justify-around'>
+                <div className='flex w-full gap-5 items-center justify-start'>
+                    <div><RiChat3Line style={{ height:'3rem', width:'3rem', color: '#004225' }}/></div>
+                    <div className='text-2xl font-bold'> Communicate Special Instructions </div>
+                </div>
+                <div>
+                    If there are specific areas or tasks you want the cleaners to focus on or avoid, communicate these clearly before they start.
                 </div>
             </div>
         </div>
-        <div className='h-[66.66%] rounded-3xl w-full relative bg-center bg-cover' style={{ backgroundImage: `url(${grid4})`}}>
-    <div className="absolute inset-0 rounded-3xl bg-blue-600 opacity-60"></div>
-   <h1>Hello there</h1>
-   <div>Would you like to talk to customer service about your package or how to prepare</div>
-</div>
+
+        {/* Second div */}
+
+        <div className='w-full h-[40rem] gap-2 flex flex-col justify-around'>
+            <div className='h-full w-full flex flex-col justify-around'>
+                <div className='flex w-full gap-5 items-center justify-start'>
+                    <div><AiOutlineDollarCircle style={{ height:'3rem', width:'3rem',  color: '#D6D46D'  }}/></div>
+                    <div className='text-2xl font-bold'> Payment Arrangements: </div>
+                </div>
+                <div>
+                Ensure that payment arrangements are clear and settled according to the terms agreed upon with the cleaning service.
+                </div>
+            </div>
+            
+            <div className='h-full w-full flex flex-col justify-around'>
+                <div className='flex w-full gap-5 items-center justify-start'>
+                    <div><RiFeedbackLine style={{ height:'3rem', width:'3rem',  color: '#C40C0C'   }}/></div>
+                    <div className='text-2xl font-bold'> Feedback and Follow-Up:</div>
+                </div>
+                <div>
+                After the cleaning session, provide feedback to the cleaning service if necessary. If you are satisfied, consider scheduling regular cleanings or provide referrals if you were pleased with the service.
+                </div>
+            </div>
+            
+            <div className='h-full w-full flex flex-col justify-around'>
+                <div className='flex w-full gap-5 items-center justify-start'>
+                    <div><RiChat3Line style={{ height:'3rem', width:'3rem', color: '#004225' }}/></div>
+                    <div className='text-2xl font-bold'> Communicate Special Instructions </div>
+                </div>
+                <div>
+                    If there are specific areas or tasks you want the cleaners to focus on or avoid, communicate these clearly before they start.
+                </div>
+            </div>
+        </div>
+
+  
+        
+
+        <div className='w-full h-[40rem] flex flex-col'>
+            <div className='h-[33.33%]'>
+                <div className='h-full w-full flex flex-col justify-around'>
+                    <div className='flex w-full gap-5 items-center justify-start'>
+                        <div><RiKey2Line style={{ height:'3rem', width:'3rem', color: '#E42F45' }}/></div>
+                        <div className='text-2xl font-bold'> Provide Access: </div>
+                    </div>
+                    <div>
+                        Ensure that cleaners have access to the areas that need cleaning, including keys, access codes, or any specific instructions for entry.
+                    </div>
+                </div>
+            </div>
+            <div className='h-[66.66%] rounded-3xl w-full relative bg-center bg-cover' style={{ backgroundImage: `url(${grid4})`}}>
+                <div className="absolute inset-0 rounded-3xl bg-[#183D3D] opacity-60"></div>
+                <div className="relative text-left flex flex-col gap-[1rem] z-10 p-4 text-white">
+                    <h1>Hello there</h1>
+                    <div className='text-3xl'>Are you in need of any assistance?</div>
+                    <div>You can reach us through the following channels:</div>
+                    <div className='flex w-full text-[1.5rem] items-center gap-3'>
+                        <PiPhoneDuotone className='bg-[#F97300] p-2 rounded-full' style={{ height:'3rem', width:'3rem' }}/>
+                        0245683626
+                    </div>
+                    <div className='flex w-full text-[1.5rem] items-center gap-3'>
+                        <img className='h-8 w-8 ml-2' src={gmail} alt="" />
+                        info@purgatoltd
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
-
-        
-      </div>
 
      
     </div>
