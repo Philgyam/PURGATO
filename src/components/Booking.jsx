@@ -45,7 +45,7 @@ function FAQ() {
 function Booking() {
   return (
     <div className='h-auto w-full'>
-<h1 className='pl-8 mb-[1rem] flex gap-2 items-center text-black'>
+<h1 className='pl-8 mb-[1rem] flex gap-2 items-center text-black '>
             MAKE A BOOKING
             <FaStar className='animate-pulse' style={{ color: '#FFBF00' }} />
           </h1>      <h1 className="text-4xl font-bold text-center mt-8">You're just a Booking <br /> away</h1>
@@ -102,7 +102,7 @@ function Booking() {
               </div>
               <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md items-center w-full hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50 flex justify-center">
                 Submit
-              </button>
+              </button> 
             </form>
           </div>
         </div>

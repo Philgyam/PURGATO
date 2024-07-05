@@ -16,13 +16,7 @@ import Grid from '../components/Grid';
 
 function Home() {
 
-  useEffect(()=>{
-    AOS.init({
-      once: false, // Whether animations should only happen once
-      duration: 500, // Animation duration
-      easing: 'ease', // Easing function
-    });
-  },[])
+
 
  
   return (
