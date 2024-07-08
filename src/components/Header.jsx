@@ -9,6 +9,7 @@ import { MenuButton } from './MenuButton';
 import Dropdown from './Dropdown';
 import { Navbar2 } from './Navbar2';
 import { motion } from 'framer-motion'; // Import motion from framer-motion
+import Modal from './Modal'; // Import the Modal component
 
 import hero1 from '../assets/images/hero1.jpg';
 import hero2 from '../assets/images/hero2.jpg';
@@ -16,6 +17,7 @@ import hero3 from '../assets/images/hero3.jpg';
 
 function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false); // State to manage modal visibility
   const progressCircle = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0); // State to track active slide index
   const [isVisible, setIsVisible] = useState(false); // State to manage visibility of content
@@ -32,6 +34,14 @@ function Header() {
     setIsVisible(false); // Hide content after slide transition ends
   };
 
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="h-[20rem] w-full lg:h-[35rem] relative">
       {/* Mobile Menu Button */}
@@ -42,7 +52,6 @@ function Header() {
       {/* Desktop Navigation */}
       <div className="hidden lg:flex absolute top-4 left-0 w-full justify-center gap-[10rem] right-0 z-10">
         <div className='flex'>
-         
           <Navbar2 />
         </div>
       </div>
@@ -96,7 +105,7 @@ function Header() {
                   transition={{ duration: 0.3, delay: 1.0 }} // Animation duration for button (adjust duration here)
                   className="mt-5"
                 >
-                  <button className="bg-orange-500 hover:bg-orange-600 rounded-full text-white py-2 px-4 transition-transform transform hover:scale-105">
+                  <button onClick={openModal} className="bg-orange-500 hover:bg-orange-600 rounded-full text-white py-2 px-4 transition-transform transform hover:scale-105">
                     Book us Now
                   </button>
                 </motion.div>
@@ -121,7 +130,7 @@ function Header() {
                   transition={{ duration: 0.3, delay: 1.0 }} // Animation duration for button (adjust duration here)
                   className="mt-5"
                 >
-                  <button className="bg-orange-500 hover:bg-orange-600 rounded-full text-white py-2 px-4 transition-transform transform hover:scale-105">
+                  <button onClick={openModal} className="bg-orange-500 hover:bg-orange-600 rounded-full text-white py-2 px-4 transition-transform transform hover:scale-105">
                     Book us Now
                   </button>
                 </motion.div>
@@ -146,8 +155,8 @@ function Header() {
                   transition={{ duration: 0.3, delay: 1.0 }} // Animation duration for button (adjust duration here)
                   className="mt-5"
                 >
-                  <button className="bg-orange-500 hover:bg-orange-600 rounded-full text-white py-2 px-4 transition-transform transform hover:scale-105">
-                  Book us Now
+                  <button onClick={openModal} className="bg-orange-500 hover:bg-orange-600 rounded-full text-white py-2 px-4 transition-transform transform hover:scale-105">
+                    Book us Now
                   </button>
                 </motion.div>
               </motion.div>
@@ -162,6 +171,9 @@ function Header() {
           </div>
         </Swiper>
       </div>
+
+      {/* Modal */}
+      <Modal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 }

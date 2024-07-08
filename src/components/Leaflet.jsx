@@ -1,6 +1,6 @@
 import React from 'react'
 import { MapContainer,TileLayer,Marker ,Popup} from 'react-leaflet'
-import 'Leaflet/dist/leaflet.css'
+import 'leaflet/dist/leaflet.css'
 import { Icon, popup } from 'leaflet'
 import pointer from '../assets/images/pointer.png'
 
@@ -21,7 +21,7 @@ function Leaflet() {
 
   return (
     
-        <MapContainer center={[5.659347073284908, -0.1719914775769745]} className='h-[20rem] -[80%]'  zoom={13}>
+        <MapContainer center={[5.659347073284908, -0.1719914775769745]} className='h-[20rem] lg:w-[80%]'  zoom={13}>
 
 
             <TileLayer

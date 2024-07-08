@@ -42,7 +42,7 @@ function Grid() {
     <div data-aos="fade-right"  className="lg:w-32 lg:h-32 w-[10rem] h-[12rem] ml-4   bg-cover bg-center rounded-lg " style={{ backgroundImage: `url(${grid2})` }}></div>
   </div>
   <div className="flex flex-col ">
-    <div className="w-32 h-32 flex flex-col bg-[#219C90] ml-1 mt-[6rem] rounded-lg ">
+    <div className="lg:w-32 w-[6rem]  h-32 flex flex-col bg-[#219C90] ml-1 mt-[6rem] rounded-lg ">
         <span className='text-3xl lg:text-5xl font-semibold text-white text-center'> 20+</span> <br />
         <h1 className='text-center text-white font-mono'>Customer</h1>
         <h1 className='text-center text-white font-mono'>Service</h1>
