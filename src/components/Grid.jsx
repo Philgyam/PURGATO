@@ -47,7 +47,7 @@ function Grid() {
         <h1 className='text-center text-white font-mono'>Customer</h1>
         <h1 className='text-center text-white font-mono'>Service</h1>
     </div>
-    <div data-aos="fade-left" className="w-[15rem] absolute h-[20rem] bg-cover bg-center border-[#EEF7FF] border-[13px] top-[50%]  rounded-2xl left-[43%] lg:left-[28%] lg:top-[40%]"style={{ backgroundImage: `url(${grid3})` }}></div>
+    <div data-aos="fade-left" className="w-[15rem] overflow-hidden absolute h-[20rem] bg-cover bg-center border-[#EEF7FF] border-[13px] top-[50%]  rounded-2xl left-[43%] lg:left-[28%] lg:top-[40%]"style={{ backgroundImage: `url(${grid3})` }}></div>
   </div>
 </div>
 
