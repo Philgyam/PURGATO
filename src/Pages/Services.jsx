@@ -31,7 +31,9 @@ import { AiOutlineDollarCircle } from "react-icons/ai";
 import { RiFeedbackLine } from "react-icons/ri";
 import { RiKey2Line } from "react-icons/ri";
 import { PiPhoneDuotone } from "react-icons/pi";
-
+import FAQ2 from '../components/FAQ2';
+import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 
 
@@ -88,37 +90,87 @@ const service = [
     }
 ];
 
-function Header() {
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <header className="bg-[#F5EFE6] shadow-md py-4 px-8 flex justify-around items-center">
-      <div className="flex items-start w-full justify-start">
-        <h1 className="text-xl font-bold text-gray-800">LOGO</h1>
+    <header className="bg-[#005C78] shadow-md py-4 flex justify-between px-8 md:flex  md:items-center">
+      <div className="flex items-center justify-start md:justify-start">
+        <h1 className="text-2xl font-bold text-white">LOGO</h1>
       </div>
+
+      <div className="flex md:hidden items-center mt-[-1.5rem] justify-end">
+        <button
+          className="text-white focus:outline-none"
+          onClick={toggleMenu}
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <nav className={`md:flex  md:flex-row md:space-x-4 md:items-center ${isMenuOpen ? 'block' : 'hidden'}`}>
+        <div className='hidden lg:block md:block'>
+        <Link to="/" className="text-sm font-bold text-white block md:inline-block py-2 px-4 hover:text-gray-300 transition duration-300">
+          Home
+        </Link>
+        <Link to="/about" className="text-sm font-bold text-white block md:inline-block py-2 px-4 hover:text-gray-300 transition duration-300">
+          About
+        </Link>
+        <Link to="/services" className="text-sm font-bold text-white block md:inline-block py-2 px-4 hover:text-gray-300 transition duration-300">
+          Services
+        </Link>
+
+        </div>
+
+        <div className={`fixed lg:hidden md:hidden top-[5rem] inset-0 z-50 overflow-hidden flex justify-center items-center ${isMenuOpen ? 'visible' : 'hidden'}`}>
+          <div className="absolute inset-y-0 left-0 w-64 bg-white shadow-xl transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition duration-300">
+            <div className="flex items-center justify-between p-4 border-b border-gray-200">
+              <h2 className="text-lg font-semibold">Menu</h2>
+            </div>
+            <nav className="py-4">
+              <ul className="space-y-2">
+                <li>
+                  <a href="#home" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Home</a>
+                </li>
+                <li>
+                  <a href="#services" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Services</a>
+                </li>
+                <li>
+                  <a href="#contact" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+      </nav>
+
+        
+       
      
-      <div className="flex py-4 items-center justify-around w-full">
-        <div className='flex justify-start font-bold gap-4 w-full'>
-          <img className='h-[33px] w-[33px]' src={phone} alt="" />
-          <div>
-            <div>Call Us</div>
-            <div>0234786271</div>
-          </div>
-        </div>
-        <div className='flex justify-start font-bold gap-4 w-full'>
-          <img className='h-[33px] w-[33px]' src={gmail} alt="" />
-          <div>
-            <div>Email Us</div>
-            <div>purgato.com</div>
-          </div>
-        </div>
-        <div className='flex justify-start w-full'>
-          <button className='px-4 text-white py-4 rounded-full bg-[#116D6E]'>
-            Click for Quote
-          </button>
-        </div>
-      </div>
     </header>
   );
 }
+
+
+
 
 function Services() {
   const [selectedService, setSelectedService] = useState(service[0]);
@@ -176,7 +228,7 @@ function Services() {
             <div data-aos="fade-right" className='w-[10rem] rounded-full h-[10rem]'>
               <img className='w-[10rem] rounded-full h-[10rem]' src={win} alt="" />
               <button className='absolute top-2 group-hover:bg-[#FF5722] bg-[#01352C] h-[2.5rem] transition-transform duration-300 text-white text-2xl w-[2.5rem] rounded-full'>
-                1
+                2
               </button>
             </div>
             <div>
@@ -187,7 +239,7 @@ function Services() {
             <div data-aos="fade-right" className='w-[10rem] rounded-full h-[10rem]'>
               <img className='w-[10rem] rounded-full h-[10rem]' src={win} alt="" />
               <button className='absolute top-2 group-hover:bg-[#FF5722] bg-[#01352C] h-[2.5rem] transition-transform duration-300 text-white text-2xl w-[2.5rem] rounded-full'>
-                1
+                3
               </button>
             </div>
             <div>
@@ -198,7 +250,7 @@ function Services() {
             <div data-aos="fade-right" className='w-[10rem] rounded-full h-[10rem]'>
               <img className='w-[10rem] rounded-full h-[10rem]' src={win} alt="" />
               <button className='absolute top-2 group-hover:bg-[#FF5722] bg-[#01352C] h-[2.5rem] transition-transform duration-300 text-white text-2xl w-[2.5rem] rounded-full'>
-                1
+                4
               </button>
             </div>
           </div>
@@ -211,9 +263,9 @@ function Services() {
         <div className='text-left font-bold text-2xl  w-full'>SATISFACTION</div>
       </div>
       <div className='bg-[#EEF7FF] w-full h-full'>
-    <h1 className='text-5xl mt-[5rem] pl-[3rem] font-bold mb-[5rem]'>Purgato Essentials</h1>
-    <div className='h-[50rem] w-full lg:px-[5rem] px-[1rem] gap-2 justify-around flex flex-col lg:flex-row'>
-        <div className='w-full h-[40rem] gap-2 flex flex-col justify-around'>
+    <h1 className='text-5xl mt-[5rem] pl-[3rem]  font-bold mb-[5rem]'>Purgato Essentials</h1>
+    <div className='lg:h-[50rem]  w-full lg:px-[5rem] px-[1rem] lg:gap-2 gap-[5rem] justify-around flex flex-col lg:flex-row'>
+        <div className='w-full h-[40rem] gap-[5rem] lg:gap-2 flex flex-col justify-around'>
             <div className='h-full w-full flex flex-col justify-around'>
                 <div className='flex w-full gap-5 items-center justify-start'>
                     <div><RiHomeGearLine style={{ height:'3rem', width:'3rem', color: '#FF69B4' }}/></div>
@@ -313,6 +365,11 @@ function Services() {
         </div>
     </div>
 </div>
+<div className='mt-[5rem] flex w-full items-center justify-center'> 
+<FAQ2/>
+</div>
+<Footer/>
+
 
      
     </div>
