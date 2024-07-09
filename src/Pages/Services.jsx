@@ -34,7 +34,8 @@ import { PiPhoneDuotone } from "react-icons/pi";
 import FAQ2 from '../components/FAQ2';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
-
+import Dropdown from '../components/Dropdown';
+import Upperheader from '../components/Upperheader';
 
 
 
@@ -98,10 +99,8 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#005C78] shadow-md py-4 flex justify-between px-8 md:flex  md:items-center">
-      <div className="flex items-center justify-start md:justify-start">
-        <h1 className="text-2xl font-bold text-white">LOGO</h1>
-      </div>
+    <header className="bg-[#005C78] shadow-md px-2 h-[3rem] flex justify-end py-8 md:flex  md:items-center">
+      
 
       <div className="flex md:hidden items-center mt-[-1.5rem] justify-end">
         <button
@@ -109,58 +108,26 @@ const Header = () => {
           onClick={toggleMenu}
         >
           <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          </svg>
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M4 6h16M4 12h16M4 18h16"
+        ></path>
+      </svg>
+         
         </button>
       </div>
 
-      <nav className={`md:flex  md:flex-row md:space-x-4 md:items-center ${isMenuOpen ? 'block' : 'hidden'}`}>
-        <div className='hidden lg:block md:block'>
-        <Link to="/" className="text-sm font-bold text-white block md:inline-block py-2 px-4 hover:text-gray-300 transition duration-300">
-          Home
-        </Link>
-        <Link to="/about" className="text-sm font-bold text-white block md:inline-block py-2 px-4 hover:text-gray-300 transition duration-300">
-          About
-        </Link>
-        <Link to="/services" className="text-sm font-bold text-white block md:inline-block py-2 px-4 hover:text-gray-300 transition duration-300">
-          Services
-        </Link>
+      {isMenuOpen && <Dropdown isMenuOpen={isMenuOpen } toggleDropdown={toggleMenu} />}
 
-        </div>
-
-        <div className={`fixed lg:hidden md:hidden top-[5rem] inset-0 z-50 overflow-hidden flex justify-center items-center ${isMenuOpen ? 'visible' : 'hidden'}`}>
-          <div className="absolute inset-y-0 left-0 w-64 bg-white shadow-xl transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition duration-300">
-            <div className="flex items-center justify-between p-4 border-b border-gray-200">
-              <h2 className="text-lg font-semibold">Menu</h2>
-            </div>
-            <nav className="py-4">
-              <ul className="space-y-2">
-                <li>
-                  <a href="#home" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Home</a>
-                </li>
-                <li>
-                  <a href="#services" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Services</a>
-                </li>
-                <li>
-                  <a href="#contact" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Contact Us</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-
-      </nav>
+  
 
         
        
@@ -177,6 +144,7 @@ function Services() {
 
   return (
     <div className='h-full w-full' style={{ backgroundImage: `url(${process})`}}>
+      <Upperheader/>
       <Header />
       <div className="p-8">
         <div className='lg:flex-row flex flex-col lg:h-[30rem] h-[60rem] lg:gap-[0rem] mt-[0rem] w-full '>

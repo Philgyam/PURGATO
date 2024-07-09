@@ -1,7 +1,73 @@
-import React from 'react';
+import React,{useState} from 'react';
 import clean from '../assets/images/clean.jpg'
 import background from '../assets/images/back1.png';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
+import Dropdown from '../components/Dropdown';
+import Upperheader from '../components/Upperheader';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <header className="bg-[#005C78] shadow-md px-2 h-[3rem] flex justify-end py-8 md:flex  md:items-center">
+      
+
+      <div className="flex md:hidden items-center mt-[-1.5rem] justify-end">
+        <button
+          className="text-white focus:outline-none"
+          onClick={toggleMenu}
+        >
+          <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M4 6h16M4 12h16M4 18h16"
+        ></path>
+      </svg>
+         
+        </button>
+      </div>
+
+      {isMenuOpen && <Dropdown isMenuOpen={isMenuOpen } toggleDropdown={toggleMenu} />}
+
+  
+
+        
+       
+     
+    </header>
+  );
+}
+
+
+
+
 
 function About() {
   return (
@@ -10,6 +76,8 @@ function About() {
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}>
+        <Upperheader/>
+        <Header />
       <h1 className="text-4xl lg:text-6xl font-bold text-center mb-12 text-[#164B60]">About Us</h1>
 
       <div className="flex flex-col lg:flex-row lg:gap-16 items-center">

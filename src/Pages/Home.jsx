@@ -21,7 +21,7 @@ function Home() {
 
  
   return (
-    <div className='w-full h-full bg-[#EEF7FF] ' style={{
+    <div className='w-full h-full overflow-hidden bg-[#EEF7FF] ' style={{
       backgroundImage: `url(${background})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center'

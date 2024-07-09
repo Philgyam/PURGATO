@@ -36,10 +36,10 @@ function Grid() {
 
       <div className="flex  md:justify-center md:h-[60rem] lg:mt-[25rem]   w-full relative">
   <div className="flex flex-col ">
-    <div data-aos="fade-right" className="w-[15rem] border-[#EEF7FF] border-[13px] h-[20rem] md:w-[20rem]  rounded-lg m-4 bg-cover bg-center"  style={{ backgroundImage: `url(${grid1})` }} >
+    <div    className="w-[15rem]  h-[20rem] md:w-[20rem]  rounded-xl m-4 bg-cover bg-center"  style={{ backgroundImage: `url(${grid1})` }} >
 
     </div>
-    <div data-aos="fade-right"   className="lg:w-32 lg:h-32 w-[10rem] h-[12rem] ml-4 md:ml-[1rem] border-[#EEF7FF] border-[13px]   bg-cover bg-center rounded-lg " style={{ backgroundImage: `url(${grid2})` }}></div>
+    <div   className="lg:w-[13rem] lg:h-[14.5rem] w-[10rem] h-[12rem] ml-4 md:ml-[1rem] border-[#EEF7FF] border-[13px]   bg-cover bg-center rounded-lg " style={{ backgroundImage: `url(${grid2})` }}></div>
   </div>
   <div className="flex flex-col ">
     <div className="lg:w-32 w-[6rem]  h-32 flex flex-col  bg-[#219C90] md:ml-1  lg:ml-1 mt-[6rem] rounded-lg ">
@@ -50,7 +50,7 @@ function Grid() {
     <div data-aos="fade-left"  className="lg:w-[18rem] md:w-[18rem] w-[14rem]  absolute h-[20rem] rounded-lg bg-cover bg-center border-[#EEF7FF] border-[13px] top-[50%]   md:left-[46%]  lg:left-[46%]   left-[43%]  lg:top-[28%]"style={{ backgroundImage: `url(${grid3})` }}></div>
   </div>
 </div>
-
+{/* data-aos="fade-right" */}
 
     </div>
     </>

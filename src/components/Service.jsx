@@ -29,7 +29,7 @@ function Service() {
             CLEAN UP YOUR SPACE WITH PURGATO. <br />
           </div>
 
-          <div className='flex flex-col h-[160rem] mx-4 lg:px-[3rem] px-[1rem] lg:h-[50rem] w-full items-center justify-around'>
+          <div className='flex flex-col h-[160rem]  lg:px-[3rem] px-[1rem] lg:h-[50rem] w-full items-center justify-around'>
 
             {/* Div1 */}
             <div className='flex flex-col gap-3 mb-[5rem] justify-around h-full w-full'>

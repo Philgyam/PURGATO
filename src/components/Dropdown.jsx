@@ -10,7 +10,7 @@ function Dropdown({ isMenuOpen, toggleDropdown }) {
         initial={{ x: '-100%' }}
         animate={{ x: isMenuOpen ? '0%' : '-100%' }}
         transition={{ duration: 0.3 }}
-        className="absolute inset-y-0 left-0 w-[20rem] bg-white shadow-xl transform transition duration-300"
+        className="absolute inset-y-0 left-0 md:w-[30rem] bg-white shadow-xl transform transition duration-300"
       >
         <div className="flex items-center justify-between p-4 border-b border-gray-200">
           <h2 className="text-lg font-semibold w-full">Menu</h2>
