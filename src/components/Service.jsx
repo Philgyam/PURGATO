@@ -6,6 +6,7 @@ import carpet from '../assets/images/carpet.jpg';
 import off from '../assets/images/off.webp';
 import janitor from '../assets/images/janitor.jpg';
 import move from '../assets/images/move.jpg';
+import home from '../assets/images/home.jpg';
 import event from '../assets/images/eve.webp';
 import construct from '../assets/images/construct.jpg';
 import { FaHome, FaStar } from "react-icons/fa";
@@ -13,6 +14,8 @@ import { MdOutlineWindow, MdCleanHands, MdOutlineEvent } from "react-icons/md";
 import { ImOffice, ImTruck } from "react-icons/im";
 import { GiRolledCloth } from "react-icons/gi";
 import { IoConstructOutline } from "react-icons/io5";
+import laundry from '../assets/images/laundry.jpg'
+import { Link } from 'react-router-dom';
 
 function Service() {
   return (
@@ -40,7 +43,7 @@ function Service() {
                 <div className='w-full md:w-[50%] lg:w-full h-full group rounded-xl'>
                   <div
                     style={{
-                      backgroundImage: `url(${grid3})`,
+                      backgroundImage: `url(${home})`,
                       backgroundPosition: 'center',
                       backgroundSize: 'cover',
                       position: 'relative',
@@ -248,7 +251,7 @@ function Service() {
                 <div className='w-full h-full md:w-[50%] lg:w-full group rounded-xl'>
                   <div
                     style={{
-                      backgroundImage: `url(${off})`,
+                      backgroundImage: `url(${laundry})`,
                       backgroundPosition: 'center',
                       backgroundSize: 'cover',
                       position: 'relative',
@@ -261,13 +264,19 @@ function Service() {
                         <MdCleanHands
                         className='rounded-full bg-[#FFD93D] h-10 w-10 p-2 group-hover:text-white group-hover:bg-green-300 text-gray-800 transition-all mt-[-1.6rem] duration-500'
                       />
-                      Janitorial Services
+                     Laundry Services
                     </div>
                     <h1 className='absolute bottom-5 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-center text-[.8rem]'>
                       Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus mauris,
                     </h1>
                   </div>
                 </div>
+                <Link to='/services'>
+                <button className="text-left text-white pt-4 underline-btn">
+      Tap to see more
+    </button>
+                </Link>
+     
               </div>
 
             </div>
@@ -275,6 +284,7 @@ function Service() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }

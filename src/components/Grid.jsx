@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import grid1 from '../assets/images/grid1.jpg';
 import grid2 from '../assets/images/grid2.jpg';
 import grid3 from '../assets/images/grid3.jpg';
+import grid6 from '../assets/images/grid6.jpg';
 import { MdStars } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { FaHome, FaStar } from "react-icons/fa";
+import undercover from '../assets/images/undercover.jpg'
 
 
 function Grid() {
@@ -28,18 +31,24 @@ function Grid() {
             <div className='flex items-center mt-5 gap-2'><FaCheckCircle style={{color:'#1A5319'}} /> <h1>Professionalism</h1></div>
             <div className='flex items-center mt-5 gap-2'><FaCheckCircle style={{color:'#1A5319'}} /> <h1>Commitment</h1></div>
           </p>
-          <button className='bg-orange-500 py-2 px-[1rem] flex text-white mt-[2rem] rounded-lg'>
+          <Link to='/about'>
+          <button className='bg-orange-500 text-[1rem] py-2 px-[.5rem] flex text-white mt-[2rem] rounded-lg'>
               Read More
           </button>
+
+          </Link>
+          
         </div>
       </div>
 
       <div className="flex  md:justify-center md:h-[60rem] lg:mt-[25rem]   w-full relative">
   <div className="flex flex-col ">
-    <div    className="w-[15rem]  h-[20rem] md:w-[20rem]  rounded-xl m-4 bg-cover bg-center"  style={{ backgroundImage: `url(${grid1})` }} >
+    <div data-aos="fade-right"    className="w-[15rem]  h-[20rem] md:w-[20rem]  rounded-xl m-4 bg-cover bg-center"  
+    style={{ backgroundImage: `url(${grid1})` }} >
 
     </div>
-    <div   className="lg:w-[13rem] lg:h-[14.5rem] w-[10rem] h-[12rem] ml-4 md:ml-[1rem] border-[#EEF7FF] border-[13px]   bg-cover bg-center rounded-lg " style={{ backgroundImage: `url(${grid2})` }}></div>
+    <div data-aos="fade-right"  className="lg:w-[13rem] lg:h-[14.5rem] w-[10rem] h-[12rem] ml-4 md:ml-[1rem] border-[#EEF7FF] border-[13px]  
+     bg-cover rounded-xl  bg-center  " style={{ backgroundImage: `url(${undercover})` }}></div>
   </div>
   <div className="flex flex-col ">
     <div className="lg:w-32 w-[6rem]  h-32 flex flex-col  bg-[#219C90] md:ml-1  lg:ml-1 mt-[6rem] rounded-lg ">
@@ -47,7 +56,7 @@ function Grid() {
         <h1 className='text-center text-white font-mono'>Customer</h1>
         <h1 className='text-center text-white font-mono'>Service</h1>
     </div>
-    <div data-aos="fade-left"  className="lg:w-[18rem] md:w-[18rem] w-[14rem]  absolute h-[20rem] rounded-lg bg-cover bg-center border-[#EEF7FF] border-[13px] top-[50%]   md:left-[46%]  lg:left-[46%]   left-[43%]  lg:top-[28%]"style={{ backgroundImage: `url(${grid3})` }}></div>
+    <div data-aos="fade-left"  className="lg:w-[18rem] md:w-[18rem] w-[14rem]  absolute h-[20rem] rounded-lg bg-cover bg-center border-[#EEF7FF] border-[13px] top-[50%]   md:left-[46%]  lg:left-[46%]   left-[43%]  lg:top-[28%]"style={{ backgroundImage: `url(${grid6})` }}></div>
   </div>
 </div>
 {/* data-aos="fade-right" */}

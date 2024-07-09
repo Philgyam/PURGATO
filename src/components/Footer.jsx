@@ -2,7 +2,7 @@ import React from 'react';
 import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoPhonePortraitOutline } from "react-icons/io5";
-
+import {Link} from 'react-router-dom'
 function Footer() {
   return (
     <footer className="bg-[#061035] w-full text-white py-8">
@@ -12,7 +12,7 @@ function Footer() {
           <div className='flex flex-col space-y-4'>
             <p className='flex items-center space-x-2'>
               <FaLocationDot className="text-yellow-400" /> 
-              <span>West Legon boulevard</span>
+              <span>11 Nii Boi Avenue, West Legon, Accra</span>
             </p>
             <p className='flex items-center space-x-2'>
               <MdOutlineEmail className="text-yellow-400" />
@@ -20,17 +20,24 @@ function Footer() {
             </p>
             <p className='flex items-center space-x-2'>
               <IoPhonePortraitOutline className="text-yellow-400" />
-              <span>+233-456-7890</span>
+              <span>(+233)551102707</span>
             </p>
           </div>
         </div>
         <div className="w-full md:w-1/3 flex flex-col items-center mb-6 md:mb-0">
           <h4 className="text-xl font-bold mb-4 text-yellow-400">Quick Links</h4>
           <ul className='space-y-2'>
-            <li><a href="#home" className="hover:underline">Home</a></li>
-            <li><a href="#about" className="hover:underline">About Us</a></li>
-            <li><a href="#services" className="hover:underline">Services</a></li>
-            <li><a href="#contact" className="hover:underline">Contact</a></li>
+            <Link>
+            <li className="hover:underline">Home</li>
+            </Link>
+            
+            <Link>
+            <li className="hover:underline">Services</li>
+            </Link>
+            <Link>
+            <li className="hover:underline">About</li>
+            </Link>
+            <li><a href="#contact" className="hover:underline"></a></li>
           </ul>
         </div>
         <div className="w-full md:w-1/3 hidden lg:flex md:flex flex-col items-center mb-6 md:mb-0">

@@ -31,7 +31,7 @@ const Header = () => {
     <header className="bg-[#005C78] shadow-md px-2 h-[3rem] flex justify-end py-8 md:flex  md:items-center">
       
 
-      <div className="flex md:hidden items-center mt-[-1.5rem] justify-end">
+      <div className="flex  items-center mt-[-1.5rem] justify-end">
         <button
           className="text-white focus:outline-none"
           onClick={toggleMenu}
@@ -119,7 +119,7 @@ function About() {
 
       <div className="mt-12">
         <h2 className="text-3xl lg:text-4xl ml-4 font-bold mb-6 text-[#164B60]">Why Choose Us?</h2>
-        <div className="flex flex-col lg:flex-row lg:gap-16">
+        <div className="flex flex-col pl-3 lg:flex-row lg:gap-16 items-center">
           <div className="lg:w-1/2">
             <h3 className="text-xl lg:text-2xl font-semibold mb-4 text-[#164B60]">Expertise and Experience</h3>
             <p className="text-lg leading-relaxed mb-6">

@@ -14,6 +14,9 @@ import Modal from './Modal'; // Import the Modal component
 import hero1 from '../assets/images/hero1.jpg';
 import hero2 from '../assets/images/hero2.jpg';
 import hero3 from '../assets/images/hero3.jpg';
+import img1 from '../assets/images/PURGARTO-2.jpeg'
+import img2 from '../assets/images/img2.jpeg'
+import img3 from '../assets/images/img3.jpeg'
 
 function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -45,7 +48,7 @@ function Header() {
   return (
     <div className="h-[20rem] w-full lg:h-[35rem] relative">
       {/* Mobile Menu Button */}
-      <div className="lg:hidden absolute top-5 right-4 z-10">
+      <div className="lg:hidden absolute top-5  right-4 z-10">
         <MenuButton toggleDropdown={toggleDropdown} />
       </div>
 
@@ -88,7 +91,7 @@ function Header() {
           onSlideTransitionEnd={handleSlideTransitionEnd}
         >
           <SwiperSlide className="h-[30rem] text-white lg:h-[35rem] rounded-b-[1rem] relative">
-            <img src={hero1} alt="" className="w-full h-full object-cover" />
+            <img src={img2} alt="" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#254336] bg-opacity-60 flex items-center justify-center">
               <motion.div
                 initial={{ opacity: 0, y: 80 }} // Initial state before animation
@@ -113,7 +116,7 @@ function Header() {
             </div>
           </SwiperSlide>
           <SwiperSlide className="h-[30rem] text-white lg:h-[35rem] rounded-b-[1rem] relative">
-            <img src={hero2} alt="" className="w-full h-full object-cover" />
+            <img src={img1} alt="" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#254336] bg-opacity-60 flex items-center justify-center">
               <motion.div
                 initial={{ opacity: 0, y: 20 }} // Initial state before animation
@@ -122,7 +125,7 @@ function Header() {
                 className="text-center w-[90%] lg:w-[80%] text-white"
               >
                 <h1 className="lg:text-3xl text-[1.5rem]">
-                  At Purgato, we understand the importance of a clean and healthy environment.
+                We are dedicated to creating pristine environments that promote health and well-being.
                 </h1>
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }} // Initial state before animation
@@ -138,7 +141,7 @@ function Header() {
             </div>
           </SwiperSlide>
           <SwiperSlide className="h-[30rem] text-white lg:h-[35rem] rounded-b-[1rem] relative">
-            <img src={hero3} alt="" className="w-full h-full object-cover" />
+            <img src={img3} alt="" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#254336] bg-opacity-60 flex items-center justify-center">
               <motion.div
                 initial={{ opacity: 0, y: 20 }} // Initial state before animation
@@ -147,7 +150,7 @@ function Header() {
                 className="text-center w-[90%] lg:w-[80%] text-white"
               >
                 <h1 className="lg:text-3xl text-[1.5rem]">
-                  At Purgato, we understand the importance of a clean and healthy environment.
+                We believe in the transformative power of cleanliness to enhance your space and elevate your quality of life."
                 </h1>
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }} // Initial state before animation

@@ -4,7 +4,7 @@ export function MenuButton({ toggleDropdown }) {
   return (
     <button
       onClick={toggleDropdown}
-      className="flex items-center p-2 text-white focus:outline-none"
+      className="flex items-center  p-2 text-white focus:outline-none"
     >
       <svg
         className="w-6 h-6"

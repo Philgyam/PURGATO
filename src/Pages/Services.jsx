@@ -102,7 +102,7 @@ const Header = () => {
     <header className="bg-[#005C78] shadow-md px-2 h-[3rem] flex justify-end py-8 md:flex  md:items-center">
       
 
-      <div className="flex md:hidden items-center mt-[-1.5rem] justify-end">
+      <div className="flex  items-center mt-[-1.5rem] justify-end">
         <button
           className="text-white focus:outline-none"
           onClick={toggleMenu}

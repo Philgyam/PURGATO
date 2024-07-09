@@ -119,3 +119,29 @@ body {
     transition: transform 20s cubic-bezier(0.25, 0.1, 0.25, 1); /* Adjust timing and cubic-bezier as needed */
   }
   
+
+  .underline-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 16px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .underline-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: white; /* Color of the underline */
+    transition: width 0.3s ease;
+  }
+  
+  .underline-btn:hover::after {
+    width: 40%;
+  }
+  
