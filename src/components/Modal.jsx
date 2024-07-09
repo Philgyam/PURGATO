@@ -88,7 +88,7 @@ const Modal = ({ isOpen, onClose }) => {
               className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
               required
             >
-              <option value="" disabled>Select a service</option>
+              <option value="">Select a service</option>
               <option value="standard">Standard Cleaning</option>
               <option value="deep">Deep Cleaning</option>
               <option value="move">Move In/Out Cleaning</option>

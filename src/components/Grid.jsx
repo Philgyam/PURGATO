@@ -15,7 +15,7 @@ function Grid() {
             ABOUT US
             <FaStar className='animate-pulse' style={{ color: '#FFBF00' }} />
           </h1>
-    <div className="  h-[70rem] pb-[4rem]   md:justify-center md:items-center  mb-[15rem] lg:mb-[5rem] lg:h-[40rem] pt-[2rem] flex lg:flex-row flex-col gap-[2rem]  px-5 lg:px-[2rem] rounded-lg">
+    <div className="  h-[70rem] pb-[4rem]   md:justify-center md:items-center  mb-[15rem] lg:mb-[5rem]  lg:h-[40rem] pt-[2rem] flex lg:flex-row flex-col gap-[2rem]  px-5 lg:px-[2rem] rounded-lg">
         
       <div className="text-2xl  flex flex-col lg:pl-[3rem] h-full text-gray-800 rounded-lg w-full ">
         <h2 className="text-3xl font-semibold rounded-lg">OUR WAY <br /> THE CLEAN WAY</h2>
@@ -34,7 +34,7 @@ function Grid() {
         </div>
       </div>
 
-      <div className="flex  md:justify-center md:h-[60rem]   w-full relative">
+      <div className="flex  md:justify-center md:h-[60rem] lg:mt-[25rem]   w-full relative">
   <div className="flex flex-col ">
     <div data-aos="fade-right" className="w-[15rem] border-[#EEF7FF] border-[13px] h-[20rem] md:w-[20rem]  rounded-lg m-4 bg-cover bg-center"  style={{ backgroundImage: `url(${grid1})` }} >
 
@@ -47,7 +47,7 @@ function Grid() {
         <h1 className='text-center text-white font-mono'>Customer</h1>
         <h1 className='text-center text-white font-mono'>Service</h1>
     </div>
-    <div data-aos="fade-left"  className="lg:w-[15rem] md:w-[18rem] w-[14rem]  absolute h-[20rem] bg-cover bg-center border-[#EEF7FF] border-[13px] top-[50%]  rounded-2xl md:left-[46%] left-[43%] lg:left-[28%] lg:top-[40%]"style={{ backgroundImage: `url(${grid3})` }}></div>
+    <div data-aos="fade-left"  className="lg:w-[18rem] md:w-[18rem] w-[14rem]  absolute h-[20rem] rounded-lg bg-cover bg-center border-[#EEF7FF] border-[13px] top-[50%]   md:left-[46%]  lg:left-[46%]   left-[43%]  lg:top-[28%]"style={{ backgroundImage: `url(${grid3})` }}></div>
   </div>
 </div>
 

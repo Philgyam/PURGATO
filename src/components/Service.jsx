@@ -20,7 +20,7 @@ function Service() {
       <div className='absolute inset-0 bg-[#164B60] opacity-80 z-10'></div>
       <div className='relative z-20 flex w-full h-full'>
 
-        <div className='w-full h-full'>
+        <div className='w-full h-full flex flex-col'>
           <h1 className='pl-8 mb-[1rem] flex gap-2 items-center text-white'>
             OUR SERVICES 
             <FaStar className='animate-pulse' style={{ color: '#FFBF00' }} />
@@ -29,7 +29,7 @@ function Service() {
             CLEAN UP YOUR SPACE WITH PURGATO. <br />
           </div>
 
-          <div className='flex flex-col h-[160rem] mx-4 lg:px-[3rem] px-[1rem] lg:h-[50rem] justify-around'>
+          <div className='flex flex-col h-[160rem] mx-4 lg:px-[3rem] px-[1rem] lg:h-[50rem] w-full items-center justify-around'>
 
             {/* Div1 */}
             <div className='flex flex-col gap-3 mb-[5rem] justify-around h-full w-full'>
@@ -37,7 +37,7 @@ function Service() {
               <h1 className='text-2xl lg:text-3xl text-[#bb931d] mb-4'>Residential Cleaning</h1>
 
               <div className='flex flex-col lg:flex-row gap-10 lg:gap-3 lg:h-[20rem] justify-around h-full w-full'>
-                <div className='w-full h-full group rounded-xl'>
+                <div className='w-full md:w-[50%] lg:w-full h-full group rounded-xl'>
                   <div
                     style={{
                       backgroundImage: `url(${grid3})`,
@@ -61,7 +61,7 @@ function Service() {
                   </div>
                 </div>
 
-                <div className='w-full h-full group rounded-xl'>
+                <div className='w-full md:w-[50%] lg:w-full h-full group rounded-xl'>
                   <div
                     style={{
                       backgroundImage: `url(${win})`,
@@ -85,7 +85,7 @@ function Service() {
                   </div>
                 </div>
 
-                <div className='w-full h-full group rounded-xl'>
+                <div className='w-full md:w-[50%] lg:w-full h-full group rounded-xl'>
                   <div
                     style={{
                       backgroundImage: `url(${carpet})`,
@@ -117,7 +117,7 @@ function Service() {
               <h1 className='text-2xl lg:text-3xl text-[#bb931d] mb-4'>Commercial Cleaning</h1>
 
               <div className='flex flex-col lg:flex-row gap-10 lg:gap-3 lg:h-[20rem] justify-around h-full w-full'>
-                <div className='w-full h-full group rounded-xl'>
+                <div className='w-full md:w-[50%] lg:w-full h-full group rounded-xl'>
                   <div
                     style={{
                       backgroundImage: `url(${off})`,
@@ -141,7 +141,7 @@ function Service() {
                   </div>
                 </div>
 
-                <div className='w-full h-full group rounded-xl'>
+                <div className='w-full md:w-[50%] lg:w-full h-full group rounded-xl'>
                   <div
                     style={{
                       backgroundImage: `url(${janitor})`,
@@ -165,7 +165,7 @@ function Service() {
                   </div>
                 </div>
 
-                <div className='w-full h-full group rounded-xl'>
+                <div className='w-full md:w-[50%] lg:w-full h-full group rounded-xl'>
                   <div
                     style={{
                       backgroundImage: `url(${move})`,
@@ -181,7 +181,7 @@ function Service() {
                       <ImTruck
                         className='rounded-full bg-[#FFD93D] h-10 w-10 p-2 group-hover:text-white group-hover:bg-green-300 text-gray-800 transition-all mt-[-1.6rem] duration-500'
                       />
-                      Moving Services
+                      Moving In & Out
                     </div>
                     <h1 className='absolute bottom-5 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-center text-[.8rem]'>
                       Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus mauris,
@@ -189,14 +189,15 @@ function Service() {
                   </div>
                 </div>
               </div>
+
             </div>
 
             {/* Div3 */}
-            <div className='justify-around h-full w-full lg:mb-[5rem] mb-[8rem]'>
-              <h1 className='text-2xl lg:text-3xl text-[#bb931d] mb-4'>Specialized Cleaning</h1>
+            <div className='justify-around h-full w-full'>
+              <h1 className='text-2xl lg:text-3xl text-[#bb931d] mb-4'>Specialized Services</h1>
 
-              <div className='flex flex-col lg:flex-row gap-10 lg:gap-3 lg:h-[20rem] justify-around h-full w-full'>
-                <div className='w-full h-full group rounded-xl'>
+              <div className='flex flex-col  lg:flex-row gap-10 lg:gap-3 lg:h-[20rem] justify-around h-full w-full'>
+                <div className='w-full md:w-[50%] lg:w-full h-full group rounded-xl'>
                   <div
                     style={{
                       backgroundImage: `url(${event})`,
@@ -220,7 +221,7 @@ function Service() {
                   </div>
                 </div>
 
-                <div className='w-full h-full group rounded-xl'>
+                <div className='w-full md:w-[50%] lg:w-full h-full group rounded-xl'>
                   <div
                     style={{
                       backgroundImage: `url(${construct})`,
@@ -236,7 +237,7 @@ function Service() {
                       <IoConstructOutline
                         className='rounded-full bg-[#FFD93D] h-10 w-10 p-2 group-hover:text-white group-hover:bg-green-300 text-gray-800 transition-all mt-[-1.6rem] duration-500'
                       />
-                      Construction Cleaning
+                      Post Construction Cleaning
                     </div>
                     <h1 className='absolute bottom-5 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-center text-[.8rem]'>
                       Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus mauris,
@@ -244,7 +245,7 @@ function Service() {
                   </div>
                 </div>
 
-                <div className='w-full h-full group rounded-xl'>
+                <div className='w-full h-full md:w-[50%] lg:w-full group rounded-xl'>
                   <div
                     style={{
                       backgroundImage: `url(${off})`,
@@ -257,10 +258,10 @@ function Service() {
                     className='w-full h-full rounded-xl'
                   >
                     <div className='w-full text-2xl h-[5rem] flex gap-5 transition-all duration-500 absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-white p-2 rounded-lg group-hover:h-[8rem]'>
-                      <ImOffice
+                        <MdCleanHands
                         className='rounded-full bg-[#FFD93D] h-10 w-10 p-2 group-hover:text-white group-hover:bg-green-300 text-gray-800 transition-all mt-[-1.6rem] duration-500'
                       />
-                      Office Cleaning
+                      Janitorial Services
                     </div>
                     <h1 className='absolute bottom-5 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-center text-[.8rem]'>
                       Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus mauris,
@@ -268,6 +269,7 @@ function Service() {
                   </div>
                 </div>
               </div>
+
             </div>
 
           </div>
@@ -278,3 +280,4 @@ function Service() {
 }
 
 export default Service;
+

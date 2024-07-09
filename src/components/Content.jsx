@@ -31,7 +31,7 @@ function Content() {
         ))}
       </div>
 
-      <div className='flex flex-col lg:flex-row h-auto lg:h-[15rem] w-full justify-around lg:gap-5 gap-[3rem] px-4 mt-[3rem]'>
+      <div className='flex flex-col lg:flex-row h-auto lg:h-[15rem] w-full lg:mt-[3rem] justify-around lg:gap-5 gap-[3rem] px-4 mt-[12rem]'>
         <div data-aos="fade-up" data-aos-duration="1000" className='flex lg:flex-col items-center lg:items-start gap-4 w-full transform transition-transform duration-300 hover:-translate-y-2 rounded-lg overflow-hidden'>
           <RiTeamLine className='lg:mx-auto rounded-lg' style={{ height: '5rem', width: '5rem', color: "#153448" }} />
           <h1 className='text-[1.3rem] rounded-lg'>
