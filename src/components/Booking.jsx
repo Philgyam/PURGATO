@@ -2,8 +2,12 @@ import React, { useState } from 'react';
 import icon1 from '../assets/images/icon-1.png';
 import icon2 from '../assets/images/icon1.png';
 import icon3 from '../assets/images/icon-3.png';
+import icon4 from '../assets/images/recycle.png';
 import circleimg from '../assets/images/circleimg.png';
+import icon5 from '../assets/images/tank.png'
 import { FaHome, FaStar } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 function FAQItem({ question, answer }) {
@@ -56,18 +60,18 @@ function Booking() {
             <img className='h-full w-full object-cover rounded-full' src={circleimg} alt="" />
           </div>
 
-          <div className="grid grid-cols-2 lg:gap-[10rem] gap-[8rem]">
-            <div className="flex justify-center items-center border-2 border-gray-400 rounded-full h-16 w-16">
+          <div className="grid  grid-cols-2 lg:gap-[10rem] gap-[8rem]">
+            <div  className="flex justify-center items-center border-2 border-gray-400 rounded-full h-16 w-16">
               <img className='h-12 w-12 object-contain' src={icon3} alt="" />
             </div>
-            <div className="flex justify-center items-center border-2 border-gray-400 rounded-full h-16 w-16">
+            <div  className="flex justify-center items-center border-2 border-gray-400 rounded-full h-16 w-16">
               <img className='h-12 w-12 object-contain' src={icon2} alt="" />
             </div>
-            <div className="flex justify-center items-center border-2 border-gray-400 rounded-full h-16 w-16">
-              <img className='h-12 w-12 object-contain' src={icon1} alt="" />
+            <div  className="flex justify-center items-center border-2 border-gray-400 rounded-full h-16 w-16">
+              <img className='h-12 w-12 object-contain' src={icon5} alt="" />
             </div>
-            <div className="flex justify-center items-center border-2 border-gray-400 rounded-full h-16 w-16">
-              <img className='h-12 w-12 object-contain' src={icon3} alt="" />
+            <div   className="flex justify-center items-center border-2 border-gray-400 rounded-full h-16 w-16">
+              <img className='h-12 w-12 object-contain' src={icon4} alt="" />
             </div>
           </div>
         </div>
@@ -91,9 +95,19 @@ function Booking() {
               <div className="mb-6">
                 <label className="block text-sm font-medium text-gray-700">Type of Cleaning</label>
                 <select className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 h-12">
-                  <option value="option1">Option 1</option>
-                  <option value="option2">Option 2</option>
-                  <option value="option3">Option 3</option>
+                  <option value="option1"></option>
+                  <option value="option2"> House cleaning</option>
+                  <option value="option3">Office Space Cleaning</option>
+                  <option value="option3">Window Cleaning</option>
+                  <option value="option3">Carpet Cleaning</option>
+                  <option value="option3">Laundry</option>
+                  <option value="option3">Fumigation</option>
+                  <option value="option3">Janitorial Services</option>
+                  <option value="option3">Event Cleaning</option>
+                  <option value="option3">Relocation services</option>
+                  <option value="option3">Fumigation Services</option>
+                  <option value="option3">Gardening and Landscaping</option>
+                  <option value="option3">Bin washing</option>
                 </select>
               </div>
               <div className="mb-6">

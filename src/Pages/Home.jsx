@@ -10,6 +10,7 @@ import FAQ from '../components/FAQ';
 import Leaflet from '../components/Leaflet';
 import Footer from '../components/Footer';
 import Grid from '../components/Grid';
+import Upperheader from '../components/Upperheader';
 
 
 
@@ -25,6 +26,7 @@ function Home() {
       backgroundSize: 'cover',
       backgroundPosition: 'center'
     }}>
+      <Upperheader/>
       <Header />
       <Content />
       <Grid/>

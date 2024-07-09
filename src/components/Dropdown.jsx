@@ -1,26 +1,40 @@
-import React from 'react';
+import React,{useState} from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 function Dropdown() {
+
+  const isMenuOpen = useState(true)
   return (
-    <div className="fixed top-[5rem] inset-0 z-50 overflow-hidden bg-gray-900 flex justify-center items-center">
-      <div className="absolute inset-y-0 left-0 w-64 bg-white shadow-xl transform -translate-x-full">
+    <div className={`fixed lg:hidden top-[5rem] inset-0 z-50 overflow-hidden flex justify-center items-center`}>
+      <motion.div
+        initial={{ x: '-100%' }}
+        animate={{ x: isMenuOpen ? '0%' : '-100%' }}
+        transition={{ duration: .1 }}
+        className="absolute inset-y-0 left-0 w-[25rem] bg-white shadow-xl transform transition duration-300"
+      >
         <div className="flex items-center justify-between p-4 border-b border-gray-200">
-          <h2 className="text-lg font-semibold">Menu</h2>
+          <h2 className="text-lg font-semibold w-full">Menu</h2>
         </div>
-        <nav className="py-4">
+        <nav className="py-4 flex items-center w-full justify-center">
           <ul className="space-y-2">
             <li>
-              <a href="#home" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Home</a>
+              <Link to="/home" className="block px-4 py-2 text-2xl text-gray-700 hover:bg-gray-200 transition duration-200">Home</Link>
             </li>
             <li>
-              <a href="#services" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Services</a>
+              <Link to="/services" className="block px-4 py-2 text-2xl text-gray-700 hover:bg-gray-200 transition duration-200">Services</Link>
             </li>
             <li>
-              <a href="#contact" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Contact Us</a>
+              <Link to="/about" className="block px-4 py-2 text-2xl text-gray-700 hover:bg-gray-200 transition duration-200">About</Link>
             </li>
           </ul>
         </nav>
-      </div>
+        <div className='mt-[3rem] flex flex-col w-full items-center gap-[1rem]'>
+          <p className="text-xl font-semibold">CONTACT INFO</p>
+          <h1 className="text-lg">(+233)551102707</h1>
+          <h1 className="text-lg">11 Nii Boi Avenue, West Legon, Accra</h1>
+        </div>
+      </motion.div>
     </div>
   );
 }

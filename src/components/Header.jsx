@@ -14,7 +14,6 @@ import Modal from './Modal'; // Import the Modal component
 import hero1 from '../assets/images/hero1.jpg';
 import hero2 from '../assets/images/hero2.jpg';
 import hero3 from '../assets/images/hero3.jpg';
-
 function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); // State to manage modal visibility
@@ -87,8 +86,8 @@ function Header() {
           }}
           onSlideTransitionEnd={handleSlideTransitionEnd}
         >
-          <SwiperSlide className="h-[20rem] text-white lg:h-[35rem] rounded-b-[1rem] relative">
-            <img src={hero1} alt="" className="w-full h-full object-cover" />
+          <SwiperSlide className="h-[30rem] text-white  lg:h-[35rem] rounded-b-[1rem] relative">
+            <img src={hero1} alt="" className="w-full object-cover" />
             <div className="absolute inset-0 bg-[#254336] bg-opacity-60 flex items-center justify-center">
               <motion.div
                 initial={{ opacity: 0, y: 80 }} // Initial state before animation
@@ -112,7 +111,7 @@ function Header() {
               </motion.div>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="h-[20rem] text-white lg:h-[35rem] rounded-b-[1rem] relative">
+          <SwiperSlide className="h-[30rem] text-white lg:h-[35rem] rounded-b-[1rem] relative">
             <img src={hero2} alt="" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#254336] bg-opacity-60 flex items-center justify-center">
               <motion.div
@@ -137,7 +136,7 @@ function Header() {
               </motion.div>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="h-[20rem] text-white lg:h-[35rem] rounded-b-[1rem] relative">
+          <SwiperSlide className="h-[30rem] text-white lg:h-[35rem] rounded-b-[1rem] relative">
             <img src={hero3} alt="" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#254336] bg-opacity-60 flex items-center justify-center">
               <motion.div
