@@ -11,6 +11,8 @@ import Leaflet from '../components/Leaflet';
 import Footer from '../components/Footer';
 import Grid from '../components/Grid';
 import Upperheader from '../components/Upperheader';
+import StickyPhoneIcon from '../components/Phone';
+
 
 
 
@@ -34,6 +36,8 @@ function Home() {
       <Booking/>
       <Leaflet/>
       <Footer/>
+      <StickyPhoneIcon />
+
       
    
     </div>

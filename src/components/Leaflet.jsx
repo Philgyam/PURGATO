@@ -21,7 +21,7 @@ function Leaflet() {
 
   return (
     
-        <MapContainer center={[5.659347073284908, -0.1719914775769745]} className='h-[20rem] lg:w-[80%]'  zoom={13}>
+        <MapContainer center={[5.659347073284908, -0.1719914775769745]} className='h-[20rem] lg:mx-[2rem] '  zoom={13}>
 
 
             <TileLayer
@@ -33,7 +33,7 @@ function Leaflet() {
                 markers.map((marker)=>(
                    <Marker position={marker.geocode} icon={customeIcon} >
                     <Popup>
-                        <h2>Purgato is here!</h2>
+                        <h2 className='text-2xl font-bold'>Purgato is here!</h2>
                     </Popup>
 
                    </Marker>

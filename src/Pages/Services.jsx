@@ -13,11 +13,9 @@ import move from '../assets/images/move.jpg';
 import serviceback from '../assets/images/serviceback.jpg';
 import grid4 from '../assets/images/grid4.jpg'
 
-import { MdWindow } from "react-icons/md";
+import { MdWindow,MdLocalLaundryService,MdEvent } from "react-icons/md";
 import { HiBuildingOffice2 } from "react-icons/hi2";
 import { GiBroom } from "react-icons/gi";
-import { MdEvent } from "react-icons/md";
-import { MdLocalLaundryService } from "react-icons/md";
 import { IoHomeOutline } from "react-icons/io5";
 import { FaTruck } from "react-icons/fa";
 import arrow from '../assets/images/arrow.png'
@@ -36,6 +34,7 @@ import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import Dropdown from '../components/Dropdown';
 import Upperheader from '../components/Upperheader';
+import front from '../assets/images/front.jpg'
 
 
 
@@ -145,7 +144,14 @@ function Services() {
   return (
     <div className='h-full w-full' style={{ backgroundImage: `url(${process})`}}>
       <Upperheader/>
-      <Header />
+      <div className='w-full lg:flex justify-center hidden  bg-[#005C78] h-[4rem]'>
+        <ul className='flex  justify-end text-2xl text-white items-center pr-[9rem] gap-[4rem] w-full'>
+          <li>Home</li>
+          <li>Services</li>
+          <li>About</li>
+        </ul>
+
+      </div>
       <div className="p-8">
         <div className='lg:flex-row flex flex-col lg:h-[30rem] h-[60rem] lg:gap-[0rem] mt-[0rem] w-full '>
           
@@ -194,7 +200,7 @@ function Services() {
           </div>
           <div className='flex relative group gap-5 w-full items-center'>
             <div data-aos="fade-right" className='w-[10rem] rounded-full h-[10rem]'>
-              <img className='w-[10rem] rounded-full h-[10rem]' src={win} alt="" />
+              <img className='w-[10rem] rounded-full h-[10rem] bg-conta' src={front} alt="" />
               <button className='absolute top-2 group-hover:bg-[#FF5722] bg-[#01352C] h-[2.5rem] transition-transform duration-300 text-white text-2xl w-[2.5rem] rounded-full'>
                 2
               </button>
@@ -322,7 +328,7 @@ function Services() {
                     <div>You can reach us through the following channels:</div>
                     <div className='flex w-full text-[1.5rem] items-center gap-3'>
                         <PiPhoneDuotone className='bg-[#F97300] p-2 rounded-full' style={{ height:'3rem', width:'3rem' }}/>
-                        0245683626
+                        (+233)551102707
                     </div>
                     <div className='flex w-full text-[1.5rem] items-center gap-3'>
                         <img className='h-8 w-8 ml-2' src={gmail} alt="" />
@@ -333,7 +339,7 @@ function Services() {
         </div>
     </div>
 </div>
-<div className='mt-[5rem] flex w-full items-center justify-center'> 
+<div className='mt-[5rem] lg:mt-[0rem] flex w-full items-center justify-center'> 
 <FAQ2/>
 </div>
 <Footer/>

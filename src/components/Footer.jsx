@@ -27,16 +27,16 @@ function Footer() {
         <div className="w-full md:w-1/3 flex flex-col items-center mb-6 md:mb-0">
           <h4 className="text-xl font-bold mb-4 text-yellow-400">Quick Links</h4>
           <ul className='space-y-2'>
-            <Link>
+            <Link to='/'>
             <li className="hover:underline">Home</li>
             </Link>
             
-            <Link>
+            <Link o='/services'>
             <li className="hover:underline">Services</li>
             </Link>
-            <Link>
+            <Link to='/About'>
             <li className="hover:underline">About</li>
-            </Link>
+            </Link >
             <li><a href="#contact" className="hover:underline"></a></li>
           </ul>
         </div>

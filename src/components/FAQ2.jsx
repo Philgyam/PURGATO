@@ -20,7 +20,7 @@ function FAQItem2({ question, answer }) {
 
 function FAQ2() {
   const faqs = [
-    { question: 'Can I cancel a booking after processing has started?', answer: 'Depending on the kind og booking made, canceling a booking can cause is possible. other bookings will attract a fee for cancelling' },
+    { question: 'Can I cancel a booking after processing has started?', answer: 'Depending on the kind of booking made, canceling a booking is possible. Some bookings might attract a fee for cancelling' },
     { question: 'What are your rates?', answer: 'Our rates vary depending on the type and frequency of the service. Please contact us for a detailed quote.' },
     { question: 'Are your cleaners insured?', answer: 'Yes, all our cleaners are fully insured for your peace of mind.' },
     // Add more FAQs as needed

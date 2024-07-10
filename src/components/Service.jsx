@@ -32,7 +32,7 @@ function Service() {
             CLEAN UP YOUR SPACE WITH PURGATO. <br />
           </div>
 
-          <div className='flex flex-col h-[160rem]  lg:px-[3rem] px-[1rem] lg:h-[50rem] w-full items-center justify-around'>
+          <div className='flex flex-col h-[160rem] md:w-full md:ml-[13rem] lg:ml-[0rem] lg:px-[3rem] px-[1rem] lg:h-[50rem] w-full items-center justify-around'>
 
             {/* Div1 */}
             <div className='flex flex-col gap-3 mb-[5rem] justify-around h-full w-full'>
@@ -59,8 +59,7 @@ function Service() {
                       Full House Cleaning
                     </div>
                     <h1 className='absolute bottom-5 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-center text-[.8rem]'>
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus mauris,
-                    </h1>
+                    "Transform your home with our Full House Cleaning service, ensuring every corner sparkles with cleanliness and comfort."                    </h1>
                   </div>
                 </div>
 
@@ -83,8 +82,7 @@ function Service() {
                       Window Cleaning
                     </div>
                     <h1 className='absolute bottom-5 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-center text-[.8rem]'>
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus mauris,
-                    </h1>
+                    "Enhance your space with pristine clarity through our expert Window Cleaning service."                    </h1>
                   </div>
                 </div>
 
@@ -107,8 +105,7 @@ function Service() {
                       Carpet Cleaning
                     </div>
                     <h1 className='absolute bottom-5 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-center text-[.8rem]'>
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus mauris,
-                    </h1>
+                    "Revitalize your home with our meticulous Carpet Cleaning service."                    </h1>
                   </div>
                 </div>
               </div>
@@ -139,8 +136,7 @@ function Service() {
                       Office Cleaning
                     </div>
                     <h1 className='absolute bottom-5 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-center text-[.8rem]'>
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus mauris,
-                    </h1>
+                    "Transform your workplace with our comprehensive Office Cleaning service."                    </h1>
                   </div>
                 </div>
 
@@ -163,8 +159,7 @@ function Service() {
                       Janitorial Services
                     </div>
                     <h1 className='absolute bottom-5 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-center text-[.8rem]'>
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus mauris,
-                    </h1>
+                    "Elevate your business environment with our reliable Janitorial Services."                    </h1>
                   </div>
                 </div>
 
@@ -187,8 +182,7 @@ function Service() {
                       Moving In & Out
                     </div>
                     <h1 className='absolute bottom-5 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-center text-[.8rem]'>
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus mauris,
-                    </h1>
+                    "Effortless transitions with our comprehensive Relocation Cleaning services."                    </h1>
                   </div>
                 </div>
               </div>
@@ -219,8 +213,7 @@ function Service() {
                       Event Cleaning
                     </div>
                     <h1 className='absolute bottom-5 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-center text-[.8rem]'>
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus mauris,
-                    </h1>
+                    "Immaculate spaces for unforgettable events with our specialized Event Cleaning services."                    </h1>
                   </div>
                 </div>
 
@@ -243,7 +236,7 @@ function Service() {
                       Post Construction Cleaning
                     </div>
                     <h1 className='absolute bottom-5 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-center text-[.8rem]'>
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus mauris,
+                   
                     </h1>
                   </div>
                 </div>
@@ -267,17 +260,22 @@ function Service() {
                      Laundry Services
                     </div>
                     <h1 className='absolute bottom-5 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-center text-[.8rem]'>
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus mauris,
-                    </h1>
+                    "Efficient and reliable commercial laundry services to keep your fabrics fresh and professionally handled."                    </h1>
                   </div>
                 </div>
                 <Link to='/services'>
-                <button className="text-left text-white pt-4 underline-btn">
+                <button className="text-left lg:hidden text-white pt-4 underline-btn">
       Tap to see more
     </button>
                 </Link>
      
               </div>
+              <Link to='/services'>
+                <button className="text-left hidden lg:block  text-white pt-4 underline-btn">
+      Click to see more
+    </button>
+                </Link>
+     
 
             </div>
 

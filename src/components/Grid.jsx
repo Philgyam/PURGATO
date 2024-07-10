@@ -47,7 +47,7 @@ function Grid() {
     style={{ backgroundImage: `url(${grid1})` }} >
 
     </div>
-    <div data-aos="fade-right"  className="lg:w-[13rem] lg:h-[14.5rem] w-[10rem] h-[12rem] ml-4 md:ml-[1rem] border-[#EEF7FF] border-[13px]  
+    <div data-aos="fade-right"   className="lg:w-[13rem] lg:h-[14.5rem] w-[10rem] h-[12rem] md:w-[12rem] md:h-[16rem] ml-4 md:ml-[1rem]  
      bg-cover rounded-xl  bg-center  " style={{ backgroundImage: `url(${undercover})` }}></div>
   </div>
   <div className="flex flex-col ">

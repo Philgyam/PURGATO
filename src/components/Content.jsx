@@ -39,7 +39,7 @@ function Content() {
               Expert Team
             </span>
             <br />
-            for quality services. No matter the size of the job we have a team for all
+            For quality services, No matter the size of the job we have a team for all
           </h1>
         </div>
 
@@ -50,7 +50,7 @@ function Content() {
               Trustworthy
             </span>
             <br />
-            for quality services. No matter the size of the job we have a team for all
+            "Trustworthy and dependable, our dedicated team ensures quality services tailored to meet your needs, regardless of the job size."
           </h1>
         </div>
 
@@ -61,8 +61,7 @@ function Content() {
               Affordable Pricing
             </span>
             <br />
-            for quality services. No matter the size of the job we have a team for all
-          </h1>
+            " we offer top-quality cleaning services that fit your budget without compromising on excellence."          </h1>
         </div>
 
         <div data-aos="fade-up" data-aos-duration="4000" className='flex lg:flex-col items-center lg:items-start gap-4 w-full transform transition-transform duration-300 hover:-translate-y-2 rounded-lg overflow-hidden'>
@@ -71,7 +70,8 @@ function Content() {
             <span className='text-2xl text-[#bb931d] font-bold rounded-lg'>
               Advanced Equipment
             </span>
-            <br /> for quality services. No matter the size of the job we have a team for all
+            <br />
+            "Using advanced equipment, we ensure a thorough and efficient clean, delivering outstanding results every time."
           </h1>
         </div>
       </div>
